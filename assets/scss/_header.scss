@@ -1,0 +1,129 @@
+@import "_color";
+// font-family: 'Montserrat', sans-serif;
+// font-family: 'Playfair Display', serif;
+// font-family: 'Corinthia';
+
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  z-index: 99;
+  &-top {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1780px;
+    height: 65px;
+    margin: 0 auto;
+    .header-lang {
+      a {
+        display: inline-block;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 12px;
+        color: $gray;
+        transition: all 0.4s ease;
+        &.lang-active {
+          color: $gold;
+        }
+        &:hover {
+          color: $gold;
+        }
+      }
+    }
+    .header-phone {
+      a {
+        display: block;
+        font-family: 'Playfair Display', serif;
+        font-size: 24px;
+        font-style: italic;
+        color: $gold;
+        transition: all 0.4s ease;
+        &:hover {
+          color: $gray;
+        }
+      }
+    }
+  }
+  &-middle {
+    display: block;
+    width: 100%;
+    border-top: 1px solid $border;
+    border-bottom: 1px solid $border;
+    ul.menu-list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      max-width: 1780px;
+      height: 70px;
+      margin: 0 auto;
+      li.menu-item {
+        display: block;
+        margin: 0 16px;
+        a {
+          display: block;
+          font-family: 'Montserrat', sans-serif;
+          font-size: 16px;
+          color: $gray;
+          transition: all 0.4s ease;
+          &:hover {
+            color: $gold;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1680px) {
+  .header .header-middle ul.menu-list li.menu-item {
+    margin: 0 10px;
+    a {
+      font-size: 14px;
+    }
+  }
+}
+
+@media (max-width: 1366px) {
+  .header .header-middle ul.menu-list li.menu-item {
+    margin: 0 6px;
+    a {
+      font-size: 13px;
+    }
+  }
+}
+
+@media (max-width: 1199px) {
+  .header .header-top {
+    border-bottom: 1px solid $border;
+  }
+  .header .header-top .header-lang a {
+    font-size: 14px;
+  }
+  .header .header-middle {
+    display: none !important;
+  }
+}
+
+@media (max-width: 991px) {
+  //
+}
+
+@media (max-width: 768px) {
+  //
+}
+
+@media (max-width: 576px) {
+  .header .header-top .header-phone a {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 400px) {
+  .header .header-top .header-phone a {
+    font-size: 20px;
+  }
+}

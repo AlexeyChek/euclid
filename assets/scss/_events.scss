@@ -1,0 +1,424 @@
+.events-bg {
+  position: absolute;
+  width: auto;
+  height: auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 0;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.events-breadcrumbs {
+  margin-bottom: 37px;
+}
+
+.events {
+  position: relative;
+  display: block;
+  width: 100%;
+  min-height: 690px;
+  margin-bottom: 69px;
+  box-sizing: border-box;
+  z-index: 40;
+}
+
+.events-title {
+  color: #cbad6e;
+  font-family: "Playfair Display";
+  font-size: 60px;
+  font-weight: 700;
+  text-align: left;
+  font-style: normal;
+  letter-spacing: 1.97px;
+  line-height: normal;
+  margin-bottom: 62px;
+}
+
+.events-main {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 4px;
+  padding-bottom: 70px;
+}
+
+.events-main::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: auto;
+  height: 1px;
+  background-color: #e1e1e1;
+  opacity: 0.25;
+}
+
+.events-image-wrapper {
+  max-width: 468px;
+  max-height: 364px;
+  height: 100%;
+  width: 100%;
+  flex-shrink: 0;
+  margin-right: 54px;
+}
+
+.events-image {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.events-main-description {
+  display: flex;
+  flex-direction: column;
+  max-width: 644px;
+  width: 100%;
+  padding-top: 14px;
+}
+
+.description-header {
+  display: flex;
+  margin-bottom: 22px;
+}
+
+.description-image-wrapper {
+  max-width: 113px;
+  max-height: 150px;
+  height: 100%;
+  width: 100%;
+  flex-shrink: 0;
+  margin-right: 20px;
+  margin-top: 10px;
+}
+
+.description-image {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.event {
+  display: flex;
+  flex-direction: column;
+}
+
+.event-header {
+  color: #acafb1;
+  font-family: Montserrat;
+  font-size: 13px;
+  font-weight: 500;
+  text-align: left;
+  text-transform: uppercase;
+  font-style: normal;
+  letter-spacing: 0.72px;
+  line-height: normal;
+  margin-bottom: 10px;
+}
+
+.event-type {
+  position: relative;
+  padding-right: 17px;
+}
+
+.event-type::after {
+  content: '';
+  position: absolute;
+  top: 2px;
+  bottom: 0;
+  right: 0;
+  width: 1px;
+  background-color: #acafb1;
+}
+
+.event-date {
+  padding-left: 8px;
+}
+
+.event-type-full {
+  color: #ffffff;
+  font-family: Montserrat;
+  font-size: 33px;
+  font-weight: bold;
+  font-style: normal;
+  text-align: left;
+  letter-spacing: 0.8px;
+  line-height: 133%;
+}
+
+.event-name {
+  font-family: Montserrat;
+  font-size: 33px;
+  font-weight: bold;
+  color: #cbad6e;
+  font-style: normal;
+  letter-spacing: 0.8px;
+  line-height: normal;
+}
+
+.events-text {
+  color: #ffffff;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: left;
+  font-style: normal;
+  letter-spacing: 0.26px;
+  line-height: 172%;
+  margin-bottom: 20px;
+}
+
+.events-link {
+  display: flex;
+  align-items: center;
+  padding: 22px 38px;
+  color: #ffffff;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-weight: bold;
+  font-style: normal;
+  letter-spacing: 0.41px;
+  line-height: normal;
+  border: 2px solid #bd9f63;
+  align-self: flex-start;
+  margin-bottom: 0;
+  margin-top: auto;
+}
+
+.events-link-image {
+  margin-left: 19px;
+  object-fit: contain;
+}
+
+.show {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding-top: 50px;
+  column-gap: 22px;
+  row-gap: 118px;
+  margin-bottom: 77px;
+}
+
+.show-card {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.card-image-wrapper {
+  max-width: 88px;
+  max-height: 88px;
+  height: 100%;
+  width: 100%;
+  flex-shrink: 0;
+  margin-right: 16px;
+}
+
+.card-image {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.show-card-description {
+  width: 100%;
+  padding-top: 3px;
+}
+
+.show-card-header {
+  color: #acafb1;
+  font-family: Montserrat;
+  font-size: 12px;
+  font-weight: 500;
+  text-align: left;
+  text-transform: uppercase;
+  font-style: normal;
+  line-height: normal;
+  margin-bottom: 10px;
+}
+
+.show-card-type {
+  position: relative;
+  padding-right: 13px;
+  letter-spacing: normal;
+}
+
+.show-card-type::after {
+  content: '';
+  position: absolute;
+  top: 2px;
+  bottom: 0;
+  right: 0;
+  width: 1px;
+  background-color: #acafb1;
+}
+
+.show-card-date {
+  padding-left: 11px;
+  letter-spacing: 0.66px;
+}
+
+.show-card-title {
+  color: #b39760;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-weight: 700;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: 28px;
+  margin-bottom: 18px;
+}
+
+.show-card-text {
+  color: #ffffff;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 500;
+  text-align: left;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: 24px;
+}
+
+.events-link-more {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  color: #c5a669;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-weight: bold;
+  font-style: normal;
+  text-decoration: underline;
+  letter-spacing: 0.36px;
+  line-height: normal;
+  margin-bottom: 40px;
+}
+
+@media (max-width: 1199px) {
+
+  .description-image-wrapper {
+    width: 90px;
+    height: 120px;
+  }
+
+  .event-type-full {
+    font-size: 24px;
+  }
+
+  .event-name {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 991px) {
+
+  .show {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+
+  .events-link {
+    padding: 15px 30px 15px 30px;
+    font-size: 16px;
+  }
+
+  .show {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+}
+
+@media (max-width: 576px) {
+
+  .events-title {
+    font-size: 40px;
+  }
+
+  .description-image-wrapper {
+    width: 65px;
+    height: 90px;
+  }
+
+  .event-header {
+    font-size: 11px;
+  }
+
+  .event-type-full {
+    font-size: 18px;
+  }
+
+  .event-name {
+    font-size: 18px;
+  }
+
+  .events-text {
+    font-size: 16px;
+  }
+
+  .show-card-header {
+    font-size: 11px;
+  }
+
+  .show-card-title {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+@media (max-width: 400px) {
+
+  .description-image-wrapper {
+    width: 50px;
+    height: 70px;
+  }
+
+  .event-header {
+    font-size: 8px;
+  }
+
+  .event-type-full {
+    font-size: 14px;
+  }
+
+  .event-name {
+    font-size: 14px;
+  }
+
+  .events-text {
+    font-size: 13px;
+  }
+
+  .events-link {
+    padding: 12px 25px 12px 25px;
+    font-size: 14px;
+  }
+
+  .events-link-image {
+    width: 18px;
+    height: 18px;
+  }
+
+  .show-card-header {
+    font-size: 8px;
+  }
+
+  .show-card-title {
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  .show-card-text {
+    font-size: 12px;
+  }
+
+}

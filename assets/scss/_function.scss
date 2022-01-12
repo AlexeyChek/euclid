@@ -1,0 +1,50 @@
+$xxl: 1920;
+$xl: 1250px;
+$lg: 991;
+$md: 768;
+$sm: 576;
+$xs: 480;
+
+.container {
+  margin: 0 auto;
+  max-width: 1190px;
+  padding-left: 10px;
+  padding-right: 10px;
+
+  @media (max-width: #{$xl}px) {
+    max-width: 960px;
+  }
+
+  @media (max-width: #{$lg}px) {
+    max-width: 720px;
+  }
+
+  @media (max-width: #{$md}px) {
+    max-width: 540px;
+  }
+
+  @media (max-width: #{$sm}px) {
+    max-width: 100%;
+  }
+}
+
+body {
+  max-width: 1920px;
+  margin: 0 auto;
+  margin-bottom: 0 !important;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  background-color: #000000;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
+button, input, textarea {
+  cursor: pointer;
+}

@@ -1,0 +1,184 @@
+@import "_color";
+// font-family: 'Montserrat', sans-serif;
+// font-family: 'Playfair Display', serif;
+// font-family: 'Corinthia';
+
+.app-roles-theater-page {
+  .shadow-one {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2688px;
+    z-index: 4;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+}
+
+.roles-theater-page {
+  position: relative;
+  width: 100%;
+  margin-bottom: 150px;
+  z-index: 40;
+  .folding {
+    position: absolute;
+    top: -155px;
+    left: 0;
+    width: 895px;
+    height: 811px;
+    z-index: 5;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+  .shadow-two {
+    position: absolute;
+    top: -280px;
+    right: 0;
+    width: 1031px;
+    height: 1413px;
+    z-index: 4;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  .shadow-three {
+    position: absolute;
+    top: 40%;
+    right: 0;
+    width: 1457px;
+    height: 1164px;
+    z-index: 4;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  .shadow-four {
+    position: absolute;
+    top: 64%;
+    right: 0;
+    width: 1323px;
+    height: 1118px;
+    z-index: 4;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  &-wrapper {
+    position: relative;
+    width: 100%;
+    z-index: 40;
+    .wrap-title {
+      margin-bottom: 40px;
+      padding-left: 10px;
+    }
+    .roles-theater-page-list {
+      position: relative;
+      display: block;
+      max-width: 510px;
+      z-index: 40;
+      .roles-theater-page-list__item {
+        display: block;
+        width: 100%;
+        margin-bottom: 25px;
+        .item-title {
+          display: block;
+          width: 100%;
+          margin-bottom: 13px;
+          font-family: 'Montserrat', sans-serif;
+          font-size: 24px;
+          letter-spacing: 0.8px;
+          color: $gold;
+        }
+        .item-descr {
+          display: block;
+          width: 100%;
+          font-family: 'Montserrat', sans-serif;
+          font-size: 18px;
+          line-height: 1.6;
+          color: $white;
+        }
+      }
+    }
+    .evklid-image-one {
+      position: absolute;
+      top: 98px;
+      right: -104px;
+      width: 1484px;
+      height: 1078px;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+      }
+    }
+    .evklid-image-two {
+      position: absolute;
+      top: 52%;
+      right: 0px;
+      width: 535px;
+      height: 739px;
+      transform: translateY(-50%);
+      z-index: 5;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+      }
+    }
+    .evklid-image-three {
+      position: absolute;
+      top: 85.2%;
+      right: -20px;
+      width: 548px;
+      height: 822px;
+      transform: translateY(-50%);
+      z-index: 5;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+      }
+    }
+  }
+}
+
+@media (max-width: 1680px) {
+  //
+}
+
+@media (max-width: 1366px) {
+  //
+}
+
+@media (max-width: 1199px) {
+  //
+}
+
+@media (max-width: 991px) {
+  //
+}
+
+@media (max-width: 768px) {
+  //
+}
+
+@media (max-width: 576px) {
+  //
+}
+
+@media (max-width: 400px) {
+  //
+}

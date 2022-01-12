@@ -1,0 +1,52 @@
+@import "_color";
+
+.footer {
+  position: relative;
+  display: block;
+  width: 100%;
+  border-top: 1px solid $white;
+  z-index: 30;
+  &-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 135px;
+    .text {
+      font-size: 18px;
+      color: $gray;
+    }
+    a.text {
+      text-decoration: underline;
+    }
+  }
+}
+
+@media (max-width: 1680px) {
+  //
+}
+
+@media (max-width: 1366px) {
+  //
+}
+
+@media (max-width: 1199px) {
+  //
+}
+
+@media (max-width: 991px) {
+  //
+}
+
+@media (max-width: 768px) {
+  //
+}
+
+@media (max-width: 576px) {
+  //
+}
+
+@media (max-width: 400px) {
+  //
+}

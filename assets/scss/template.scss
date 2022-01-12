@@ -1,0 +1,65 @@
+@import "reset";
+@import "color";
+@import "function";
+// template
+
+// main style (start)
+@import "default";
+@import "header";
+@import "footer";
+// /main style (start)
+
+// section's (start)
+// @import "page";
+// section's (end)
+
+// page style (start)
+@import "page-main";
+@import "page-roles-theater";
+@import "page-poster";
+@import "page-performance-card";
+@import "page-roles-movie";
+@import "page-questionnaire";
+@import "page-friends";
+@import "page-cart-film";
+@import "page-contacts";
+@import "page-awards";
+@import "page-film-year";
+@import "page-tv-program";
+@import "page-audio-single";
+@import "page-video-audio";
+@import "page-trailer-films";
+@import "page-foto-archiv";
+
+@import "events";
+
+@import "popup";
+// /page style (start)
+
+@media (max-width: 1680px) {
+  //
+}
+
+@media (max-width: 1366px) {
+  //
+}
+
+@media (max-width: 1199px) {
+  //
+}
+
+@media (max-width: 991px) {
+  //
+}
+
+@media (max-width: 768px) {
+  //
+}
+
+@media (max-width: 576px) {
+  //
+}
+
+@media (max-width: 400px) {
+  //
+}

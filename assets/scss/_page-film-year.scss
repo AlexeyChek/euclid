@@ -1,0 +1,212 @@
+@import "_color";
+// font-family: 'Montserrat', sans-serif;
+// font-family: 'Playfair Display', serif;
+// font-family: 'Corinthia';
+
+.roles-movie-page {
+  .roles-shadow-one {
+    position: absolute;
+    top: -310px;
+    left: 0;
+    width: 100%;
+    height: 2688px;
+    z-index: 5;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  .roles-shadow-two {
+    position: absolute;
+    top: -380px;
+    left: 0;
+    width: 100%;
+    height: 2454px;
+    z-index: 4;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  .roles-shadow-three {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    max-width: 1706px;
+    width: 100%;
+    height: 1066px;
+    transform: translateX(-50%);
+    z-index: 5;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  .roles-shadow-four {
+    position: absolute;
+    bottom: 20%;
+    right: 0;
+    width: 1487px;
+    height: 1080px;
+    z-index: 4;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  &-wrapper {
+    position: relative;
+    width: 100%;
+    z-index: 40;
+    .clipart {
+      position: absolute;
+      top: -20px;
+      right: -40px;
+      width: 251px;
+      height: 240px;
+      img {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        z-index: 5;
+      }
+      .text {
+        position: absolute;
+        top: 60%;
+        left: 52%;
+        width: 100%;
+        font-family: 'Playfair Display', serif;
+        font-style: italic;
+        font-size: 32px;
+        text-align: center;
+        color: #8a898a;
+        transform: translate(-50%,-50%) rotate(-6deg);
+        z-index: 8;
+        span {
+          font-size: 40px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1680px) {
+  //
+}
+
+@media (max-width: 1366px) {
+  .roles-movie-page .roles-movie-page-wrapper .clipart {
+    right: 5px;
+    width: 220px;
+    height: 210px;
+  }
+  .roles-movie-page .roles-movie-page-wrapper .clipart .text {
+    font-size: 28px;
+  }
+  .roles-movie-page .roles-movie-page-wrapper .clipart .text span {
+    font-size: 38px;
+  }
+}
+
+@media (max-width: 1199px) {
+  .roles-movie-page .movie-episodes__wrapper {
+    justify-content: center;
+  }
+  .roles-movie-page .roles-movie-page-wrapper .clipart {
+    display: none;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+  }
+  .roles-movie-page .roles-movie-page-wrapper .clipart .text,
+  .roles-movie-page .roles-movie-page-wrapper .clipart .text span {
+    font-size: 0;
+  }
+}
+
+@media (max-width: 991px) {
+  .roles-movie-page .roles-movie-page__link-page {
+    margin-right: 10px;
+    margin-left: 25px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 768px) {
+  .roles-movie-page .roles-movie-page__title h2 {
+    width: 100%;
+  }
+  .roles-movie-page .roles-movie-page__link-page {
+    margin-right: 25px;
+    margin-left: 0;
+  }
+  .roles-movie-page .movie-episodes__wrapper {
+    justify-content: space-around;
+  }
+  .roles-movie-page .movie-episodes__card {
+    width: 48%;
+  }
+  .roles-movie-page .movie-episodes__image {
+    display: block;
+    margin: 0 auto;
+  }
+  .roles-movie-page .movie-episodes__title {
+    font-size: 15px;
+  }
+  .roles-movie-page .movie-episodes__text {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 576px) {
+  .roles-movie-page .roles-movie-page__link-page {
+    margin-right: 10px;
+    font-size: 12px;
+  }
+  .roles-movie-page .movie-episodes__heading {
+    margin-bottom: 20px;
+  }
+  .roles-movie-page .movie-episodes__card {
+    padding: 10px;
+  }
+  .roles-movie-page .movie-episodes__image {
+    height: 240px;
+  }
+  .roles-movie-page .movie-episodes__content {
+    padding-top: 15px;
+  }
+  .roles-movie-page .movie-episodes__title {
+    margin-bottom: 14px;
+    font-size: 14px;
+  }
+  .roles-movie-page .movie-episodes__text {
+    font-size: 13px;
+    line-height: 1.4;
+  }
+  .roles-movie-page .roles-movie-page__title .roles-movie-page__above {
+    font-size: 50px;
+  }
+  .roles-movie-page .roles-movie-page__title h2 {
+    font-size: 38px;
+  }
+  .roles-movie-page .roles-movie-page__episodes {
+    margin-top: 30px;
+  }
+}
+
+@media (max-width: 400px) {
+  .roles-movie-page .movie-episodes__card {
+    width: 96%;
+  }
+  .roles-movie-page .movie-episodes__heading {
+    font-size: 24px;
+  }
+  .roles-movie-page .roles-movie-page__link-page {
+    font-size: 10px;
+  }
+}

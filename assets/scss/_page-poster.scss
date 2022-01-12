@@ -1,0 +1,112 @@
+@import "_color";
+// font-family: 'Montserrat', sans-serif;
+// font-family: 'Playfair Display', serif;
+// font-family: 'Corinthia';
+
+.app-poster {
+  position: relative;
+  .shadow-one {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2688px;
+    z-index: 3;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  .shadow-two {
+    position: absolute;
+    top: 138px;
+    left: 0;
+    width: 932px;
+    height: 925px;
+    z-index: 5;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+  .shadow-three {
+    position: absolute;
+    top: 390px;
+    left: 0;
+    width: 908px;
+    height: 2293px;
+    z-index: 9;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+  .shadow-four {
+    position: absolute;
+    bottom: 250px;
+    left: 0;
+    width: 1543px;
+    height: 1066px;
+    z-index: 7;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+  .shadow-five {
+    position: absolute;
+    top: 750px;
+    right: 0;
+    width: 887px;
+    height: 1301px;
+    z-index: 11;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+}
+
+.poster-page {
+  position: relative;
+  display: block;
+  width: 100%;
+  margin-bottom: 120px;
+  z-index: 40;
+  &-wrapper {
+    //
+  }
+}
+
+@media (max-width: 1680px) {
+  //
+}
+
+@media (max-width: 1366px) {
+  //
+}
+
+@media (max-width: 1199px) {
+  //
+}
+
+@media (max-width: 991px) {
+  //
+}
+
+@media (max-width: 768px) {
+  //
+}
+
+@media (max-width: 576px) {
+  //
+}
+
+@media (max-width: 400px) {
+  //
+}

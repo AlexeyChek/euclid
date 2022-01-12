@@ -1,0 +1,176 @@
+@import "_color";
+// font-family: 'Montserrat', sans-serif;
+// font-family: 'Playfair Display', serif;
+// font-family: 'Corinthia';
+
+.tv-program {
+  position: relative;
+  display: block;
+  width: 100%;
+  padding-bottom: 80px;
+  .shadow-one {
+    position: absolute;
+    top: -310px;
+    left: 0;
+    width: 100%;
+    height: 1672px;
+    z-index: 5;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  &-wrapper {
+    position: relative;
+    z-index: 40;
+    .wrap-title {
+      margin-bottom: 60px;
+    }
+    .tv-program-wrap {
+      .tv-program-list__item {
+        display: block;
+        width: 100%;
+        margin-bottom: 62px;
+        .tv-program-title {
+          display: block;
+          width: 100%;
+          margin-bottom: 14px;
+          font-size: 30px;
+          color: $gold;
+        }
+        ul.list-items {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: flex-start;
+          align-items: flex-start;
+          width: 100%;
+          padding: 25px 0;
+          border-bottom: 1px solid $white;
+          &.list-items-main {
+            background-color: $gold;
+            border: none;
+            li.list-items__item {
+              color: $black;
+            }
+          }
+          li.list-items__item {
+            display: block;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 18px;
+            color: $white;
+            &:nth-child(1) {
+              width: 125px;
+              text-align: center;
+            }
+            &:nth-child(2) {
+              width: 110px;
+            }
+            &:nth-child(3) {
+              width: 140px;
+            }
+            &:nth-child(4) {
+              width: calc(100% - 140px - 125px - 110px - 20px);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1680px) {
+  //
+}
+
+@media (max-width: 1366px) {
+  //
+}
+
+@media (max-width: 1199px) {
+  .tv-program-wrapper .tv-program-wrap .tv-program-list__item ul.list-items li.list-items__item {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 991px) {
+  //
+}
+
+@media (max-width: 768px) {
+  .tv-program .tv-program-wrapper .tv-program-wrap .tv-program-list__item ul.list-items {
+    padding: 15px 0;
+  }
+  .tv-program .tv-program-wrapper .tv-program-wrap .tv-program-list__item ul.list-items li.list-items__item:nth-child(1) {
+    width: 80px;
+  }
+  .tv-program .tv-program-wrapper .tv-program-wrap .tv-program-list__item ul.list-items li.list-items__item:nth-child(2) {
+    width: 90px;
+  }
+  .tv-program .tv-program-wrapper .tv-program-wrap .tv-program-list__item ul.list-items li.list-items__item:nth-child(3) {
+    width: 110px;
+  }
+  .tv-program-wrapper .tv-program-wrap .tv-program-list__item ul.list-items li.list-items__item:nth-child(4) {
+    width: calc(100% - 80px - 90px - 110px - 10px);
+  }
+  .tv-program .tv-program-wrapper .tv-program-wrap .tv-program-list__item .tv-program-title {
+    font-size: 24px;
+  }
+  .tv-program .tv-program-wrapper .tv-program-wrap .tv-program-list__item ul.list-items li.list-items__item {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 576px) {
+  .tv-program {
+    padding-bottom: 40px;
+  }
+  .tv-program .shadow-one {
+    display: none;
+  }
+  .tv-program .tv-program-wrapper .tv-program-wrap .tv-program-list__item .tv-program-title {
+    font-size: 20px;
+  }
+  .tv-program .tv-program-wrapper .tv-program-wrap .tv-program-list__item ul.list-items li.list-items__item:nth-child(1) {
+    width: 70px;
+  }
+  .tv-program .tv-program-wrapper .tv-program-wrap .tv-program-list__item ul.list-items li.list-items__item:nth-child(2) {
+    width: 80px;
+  }
+  .tv-program .tv-program-wrapper .tv-program-wrap .tv-program-list__item ul.list-items li.list-items__item:nth-child(3) {
+    width: 100px;
+  }
+  .tv-program-wrapper .tv-program-wrap .tv-program-list__item ul.list-items li.list-items__item:nth-child(4) {
+    width: calc(100% - 70px - 80px - 100px - 10px);
+  }
+  .tv-program .tv-program-wrapper .tv-program-wrap .tv-program-list__item ul.list-items li.list-items__item {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 400px) {
+  .tv-program {
+    padding-bottom: 20px;
+  }
+  .tv-program .tv-program-wrapper .tv-program-wrap .tv-program-list__item ul.list-items {
+    padding: 10px 0;
+  }
+  .tv-program .tv-program-wrapper .tv-program-wrap .tv-program-list__item .tv-program-title {
+    font-size: 18px;
+  }
+  .tv-program .tv-program-wrapper .tv-program-wrap .tv-program-list__item ul.list-items li.list-items__item:nth-child(1) {
+    width: 50px;
+  }
+  .tv-program .tv-program-wrapper .tv-program-wrap .tv-program-list__item ul.list-items li.list-items__item:nth-child(2) {
+    width: 50px;
+  }
+  .tv-program .tv-program-wrapper .tv-program-wrap .tv-program-list__item ul.list-items li.list-items__item:nth-child(3) {
+    width: 80px;
+  }
+  .tv-program-wrapper .tv-program-wrap .tv-program-list__item ul.list-items li.list-items__item:nth-child(4) {
+    width: calc(100% - 50px - 50px - 80px - 10px);
+  }
+  .tv-program .tv-program-wrapper .tv-program-wrap .tv-program-list__item ul.list-items li.list-items__item {
+    font-size: 10px;
+  }
+}
